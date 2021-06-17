@@ -38,9 +38,7 @@ describe('LotteryDraw', () => {
             await lotteryInstance.setRewardParam(1, 50, 100);
             await rewardToken.transfer(lotteryInstance.address, 100000000);
             await lotteryInstance.Accumulate(other.address, 50, 100);
-            //过100个块
             await Time.advanceBlockWithNumber(100);
-            //领取收益
             await lotteryInstance.connect(other).claim();
         });
 

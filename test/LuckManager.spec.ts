@@ -158,7 +158,6 @@ describe('luckManager', () => {
         }
 
         it('lotteryDraw Accumulate with position change', async () => {
-            //创建pair
             const expectedAddress = computePoolAddress(
                 factory.address,
                 [tokens[0].address, tokens[1].address],
@@ -199,7 +198,6 @@ describe('luckManager', () => {
             )
 
             const tokenId = 1
-            //至少是通过的
             await nft.increaseLiquidity({
                 tokenId: tokenId,
                 amount0Desired: 100000,
