@@ -1,0 +1,16 @@
+
+contracts/testToken/
+
+node_modules/
+
+artifacts/
+
+typechain/
+
+cache/
+
+audits/
+
+deploy/
+
+scripts/
